@@ -1,32 +1,23 @@
 
-# Variable Assignment:
-my_variable = 42
+"""
+https://www.w3schools.com/python/python_variables.asp
 
+"""
+# Ask the user for their name
+name = input("What is your name? ")
 
-# Reassigning Variables:
-my_variable = 42
-my_variable = "Hello"
+# Ask the user for their age
+age = input("How old are you? ")
 
+# Ask the user for their favorite color
+favorite_color = input("What is your favorite color? ")
 
-# Printing Variables:
-my_variable = 42
-print(my_variable)
+# Ask the user for their favorite food
+favorite_food = input("What is your favorite food? ")
 
-
-# Deleting Variables:
-my_variable = 42
-del my_variable
-
-
-# Example Program
-# Input: Length and width of the rectangle
-length = 5
-width = 3
-
-# Calculate the area of the rectangle
-area = length * width
-
-# Display the results
-print("Rectangle Length:", length)
-print("Rectangle Width:", width)
-print("Rectangle Area:", area)
+# Display the information provided by the user
+print("\nHere is the information you provided:")
+print("Name:", name)
+print("Age:", age)
+print("Favorite Color:", favorite_color)
+print("Favorite Food:", favorite_food)

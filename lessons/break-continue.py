@@ -1,5 +1,8 @@
 
-# https://www.programiz.com/python-programming/break-continue
+"""
+https://www.programiz.com/python-programming/break-continue
+"""
+
 # Ticket price constants
 TICKET_PRICE = 100
 FREE_TICKET_AGE_LIMIT = 3
