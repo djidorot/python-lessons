@@ -3,23 +3,23 @@
 https://www.programiz.com/python-programming/break-continue
 """
 
-# Ticket price constants
-TICKET_PRICE = 100
-FREE_TICKET_AGE_LIMIT = 3
+# Price of a single ticket
+ticket_price = 100
 
-# Initialize total price
-total_price = 0
-
-# Loop to input ages and calculate total price
+# Input ages of passengers
+passenger_ages = []
 for i in range(5):
-    age = int(input(f"Enter age of passenger {i + 1}: "))
+    age = int(input("Enter the age of passenger {}: ".format(i + 1)))
+    passenger_ages.append(age)
 
-    # Check if the passenger is under 3 years old (ticket is free)
-    if age < FREE_TICKET_AGE_LIMIT:
-        print(f"Passenger {i + 1}: Ticket is free")
+# Calculate and output the total ticket price
+total_price = 0
+for age in passenger_ages:
+    if age < 3:
+        # Ticket is free for children under 3
+        total_price += 0
     else:
-        total_price += TICKET_PRICE
-        print(f"Passenger {i + 1}: ${TICKET_PRICE}")
+        total_price += ticket_price
 
-# Print the total ticket price
-print(f"Total ticket price for the passengers: ${total_price}")
+print("Total ticket price for {} passengers: ${}".format(
+    len(passenger_ages), total_price))
