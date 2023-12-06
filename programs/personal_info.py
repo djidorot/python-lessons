@@ -22,7 +22,7 @@ Experiment with additional features based on what you've learned.
 # Personal Information Program
 
 # Get user input for personal information
-name = input("Enter your name: ")
+name = input("\nEnter your name: ")
 age = input("Enter your age: ")
 city = input("Enter your city: ")
 occupation = input("Enter your occupation: ")
@@ -33,3 +33,4 @@ print("Name: ", name)
 print("Age: ", age)
 print("City: ", city)
 print("Occupation: ", occupation)
+print()
