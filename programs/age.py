@@ -1,38 +1,26 @@
 
 """
-Age to 100 Calculator
+Here's how the program works:
 
-Objective: Write a Python program that takes the user's age as input, converts it to an integer, and calculates the year in which the user will turn 100 years old.
+It prompts the user to enter their age using the input function, and the entered value is stored as a string in the variable age_str.
 
-Instructions:
+It then converts the string age_str to an integer using the int function, and the result is stored in the variable age.
 
-User Input: The program starts by prompting the user to enter their age. Use the input function to receive the age as a string.
+The program calculates the year of birth by subtracting the user's age from the current year (2023 in this case) and stores it in the variable birth_year.
 
-Type Conversion: Convert the entered age from a string to an integer using the int function.
-
-Year Calculation: The program assumes the current year is 2023 (you may need to update this). It calculates how many years are left until the user turns 100.
-
-Display the Result: Add the calculated years to the current year to determine the year when the user will turn 100. Finally, print the result.
-
-Run the Program: Execute the script and input your age when prompted. The program will output the year you will turn 100.
-
-Experiment: Try running the program with different ages to observe how the result changes. Ensure to update the current_year variable with the actual current year.
-
-Save Your Work: Save the Python file for future reference.
-
-Feel free to explore and modify the program to enhance your understanding of Python variables, input, and type conversion. If you encounter any challenges or have questions, seek assistance. Happy coding!
+Finally, it prints the calculated birth year using the print function.
 
 """
-# Get user's age as input
-user_age_str = input("Enter your age: ")
 
-# Convert the user's age from string to integer
-user_age = int(user_age_str)
+# Get the user's age as input
+age_str = input("Enter your age: ")
 
-# Calculate the year in which the user will turn 100 years old
-current_year = 2023  # You may need to update this with the current year
-years_until_100 = 100 - user_age
-year_turn_100 = current_year + years_until_100
+# Convert the age from string to integer
+age = int(age_str)
+
+# Calculate the year of birth (assuming the current year is 2023)
+current_year = 2023
+birth_year = current_year - age
 
 # Display the result
-print(f"You will turn 100 years old in the year {year_turn_100}.")
+print("You were born in the year:", birth_year)

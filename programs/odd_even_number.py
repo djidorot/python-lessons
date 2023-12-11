@@ -34,6 +34,7 @@ end_number = int(input("Enter the ending number: "))
 if end_number <= start_number:
     print("Error: The ending number must be greater than the starting number.")
 else:
+
     # Iterate through the range and check if each number is even or odd
     print(f"\nChecking numbers from {start_number} to {end_number}:\n")
     for number in range(start_number, end_number + 1):
