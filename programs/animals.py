@@ -54,6 +54,7 @@ while True:
         animal = input("Enter the name of the animal: ")
         animals.append(animal)
         print(f"{animal} has been added to the list.")
+
     elif choice == "2":
         if not animals:
             print("The list is empty.")
@@ -61,8 +62,10 @@ while True:
             print("List of animals:")
             for animal in animals:
                 print(animal)
+
     elif choice == "3":
         print("Exiting the program. Goodbye!")
         break
+
     else:
         print("Invalid choice. Please enter 1, 2, or 3.")
