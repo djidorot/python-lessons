@@ -34,3 +34,50 @@ print("Age: ", age)
 print("City: ", city)
 print("Occupation: ", occupation)
 print()
+
+
+"""
+FUNCTION
+
+xplaining this task to students, you can break it down as follows:
+
+Task: Personal Information Program
+
+Objective:
+Create a simple Python program that collects and displays personal information. The program should utilize functions for better organization and readability.
+
+Step 1: Collecting Information Function
+Create a function called get_personal_information.
+Inside this function, use the input function to collect the user's name, age, city, and occupation.
+Return these values as a tuple.
+
+Step 2: Displaying Information Function
+Create a function called display_personal_information that takes the collected information as arguments.
+Inside this function, use print statements to display the user's personal information.
+
+Step 3: Combining Functions
+Call the get_personal_information function to collect the user's information and store it in a variable (e.g., user_info).
+Call the display_personal_information function, passing the collected information as arguments using the * unpacking operator.
+
+# Personal Information Program
+
+def collect_and_display_information():
+    # Get user input for personal information
+    name = input("\nEnter your name: ")
+    age = input("Enter your age: ")
+    city = input("Enter your city: ")
+    occupation = input("Enter your occupation: ")
+
+    # Display the collected information
+    print("\nPersonal Information:")
+    print("Name:", name)
+    print("Age:", age)
+    print("City:", city)
+    print("Occupation:", occupation)
+
+# Call the function
+collect_and_display_information()
+
+
+
+"""
