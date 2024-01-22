@@ -1,3 +1,5 @@
+
+
 def perform_arithmetic_operations():
     # Get user input for two numbers
     num1 = float(input("Enter the first number: "))
