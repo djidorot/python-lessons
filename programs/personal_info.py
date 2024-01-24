@@ -22,18 +22,45 @@ Experiment with additional features based on what you've learned.
 # Personal Information Program
 
 # Get user input for personal information
-name = input("\nEnter your name: ")
-age = input("Enter your age: ")
-city = input("Enter your city: ")
-occupation = input("Enter your occupation: ")
-
-# Display the collected information
-print("\nPersonal Information:")
-print("Name: ", name)
-print("Age: ", age)
-print("City: ", city)
-print("Occupation: ", occupation)
 print()
+print("Personal Information - Part 1")
+
+
+def personal_info1():
+    name = input("\nEnter your name: ")
+    age = input("Enter your age: ")
+    city = input("Enter your city: ")
+    occupation = input("Enter your occupation: ")
+
+    # Display the collected information
+    print("\nPersonal Information:")
+    print("Name: ", name)
+    print("Age: ", age)
+    print("City: ", city)
+    print("Occupation: ", occupation)
+
+
+print()
+
+
+def personal_info2():
+    print("Personal Information - Part 2")
+
+    # Get user input for personal information
+    name = input("\nEnter your name: ")
+    age = input("Enter your age: ")
+    city = input("Enter your city: ")
+    occupation = input("Enter your occupation: ")
+
+    # Display the collected information
+    print("\nPersonal Information:")
+    print("Name: ", name)
+    print("Age: ", age)
+    print("City: ", city)
+    print("Occupation: ", occupation)
+
+
+personal_info2()
 
 
 """
