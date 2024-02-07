@@ -6,13 +6,13 @@ example of how to take user input, use conditional statements, and display resul
 """
 
 # Get input from the user
-num1 = float(input("/nEnter the first number: "))
+num1 = float(input("\nEnter the first number: "))
 num2 = float(input("Enter the second number: "))
 
 # Compare the two numbers
 if num1 > num2:
-    print(f"{num1} is greater than {num2}")
+    print(f"\n{num1} is greater than {num2}\n")
 elif num1 == num2:
-    print(f"{num1} is equal to {num2}")
+    print(f"\n{num1} is equal to {num2}\n")
 else:
-    print(f"{num1} is less than {num2}")
+    print(f"\n{num1} is less than {num2}\n")
