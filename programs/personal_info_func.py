@@ -42,3 +42,5 @@ user_occupation = input("Enter your occupation: ")
 # Call the function with user inputs as parameters
 collect_and_display_information(
     user_name, user_age, user_city, user_occupation)
+
+

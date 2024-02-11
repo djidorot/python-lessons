@@ -1,8 +1,13 @@
 """
-This Python program allows a user to input two numbers, and then it compares these numbers to determine whether the
-first number is greater than, equal to, or less than the second number. It uses if/else statements and logical
-operators to perform the comparison and provides the appropriate output based on the result. It's a simple
-example of how to take user input, use conditional statements, and display results in Python.
+Prompt the user to input two numbers.
+
+Compare the numbers using conditional statements:
+
+If the first number is greater than the second, print that the first number is greater.
+If the numbers are equal, print that they are equal.
+
+Otherwise, print that the first number is less than the second.
+
 """
 
 # Get input from the user
