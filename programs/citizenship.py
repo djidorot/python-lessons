@@ -1,13 +1,17 @@
 
 """
-Input Collection:
-The script begins by collecting two pieces of information from the user: their age and citizenship status.
+Problem Statement: Voting Eligibility Checker
 
-Boolean Conversion:
-The script then converts the citizenship status input to a boolean value (True if "yes", False otherwise).
+You are tasked with creating a simple program that determines whether an individual is eligible to vote based on their age and citizenship status. The program should follow these rules:
 
-Voting Eligibility Check:
-The main logic of the script is to check if the person is eligible to vote based on their age (at least 18 years) and citizenship status.
+Prompt the user to input their age.
+Ask the user whether they are a citizen (with a “yes” or “no” response).
+Convert the user’s input for citizenship status to a boolean value (True for “yes” and False for “no”).
+Check if the user is at least 18 years old and a citizen.
+If both conditions are met, display the message: “You are eligible to vote!”
+Otherwise, display the message: “Sorry, you are not eligible to vote.”
+
+Your task is to write the Python code that accomplishes the above requirements. Good luck! 🗳️
 
 """
 
