@@ -21,3 +21,4 @@ def perform_arithmetic_operations():
 # Call the function to execute the code
 perform_arithmetic_operations()
 
+

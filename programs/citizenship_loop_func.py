@@ -6,6 +6,7 @@ Create a Python program that determines whether a person is eligible to vote bas
 The program should check if the age input is a valid integer and if the citizenship status input is either "yes" or "no". If the inputs are valid, the program should determine if the person is eligible to vote (age 18 or older and a citizen). If eligible, it should print "You are eligible to vote!" Otherwise, it should print "Sorry, you are not eligible to vote."
 
 Your task is to refactor the given program by encapsulating its main functionality within a function named check_voting_eligibility(). Upon completion, create a problem statement, including the code template and task description, for a Python programming assignment for students.
+
 """
 
 

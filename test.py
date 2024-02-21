@@ -1,26 +1,24 @@
-class Calculator:
-    def add(self, num1, num2):
-        return num1 + num2
-    
-    def subtract(self, num1, num2):
-        return num1 - num2
-    
-    def multiply(self, num1, num2):
-        return num1 * num2
-    
-    def divide(self, num1, num2):
-        if num2 == 0:
-            return "Error: Cannot divide by zero"
-        return num1 / num2
+"""
 
-# Creating an instance of the Calculator class
-calculator = Calculator()
+Input Gathering:
+Ask the user to input two numeric values (you can specify that they should be floating-point numbers).
+Store these input values in variables, such as num1 and num2.
 
-# Performing calculations
-print("Addition:", calculator.add(5, 3))          # Output: 8
-print("Subtraction:", calculator.subtract(8, 2))   # Output: 6
-print("Multiplication:", calculator.multiply(4, 7))# Output: 28
-print("Division:", calculator.divide(10, 2))       # Output: 5.0
-print("Division by zero:", calculator.divide(8, 0)) # Output: Error: Cannot divide by zero
+Arithmetic Operations:
 
+Perform the following arithmetic operations:
+Addition: Add num1 and num2 together. Store the result in a variable (e.g., sum_result).
+Subtraction: Subtract num2 from num1. Store the result in a variable (e.g., difference_result).
+Multiplication: Multiply num1 by num2. Store the result in a variable (e.g., product_result).
+Division: Divide num1 by num2. Store the result in a variable (e.g., division_result).
 
+Display the Results:
+Print out the computed results using formatted strings (f-strings):
+Display the sum:
+Display the difference:
+Display the product:
+Display the division:
+
+Execute the Code:
+Call the function perform_arithmetic_operations() to execute the code and perform the calculations.
+"""

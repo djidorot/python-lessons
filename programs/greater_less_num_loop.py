@@ -27,6 +27,7 @@ Do you want to compare more numbers? (yes/no): yes
 Enter the first number: 8
 Enter the second number: 8
 8.0 is equal to 8.0
+
 Do you want to compare more numbers? (yes/no): no
 
 """
@@ -47,8 +48,7 @@ while True:
         print("The numbers are not directly comparable.")
 
     # Ask the user if they want to continue
-    user_input = input(
-        "Do you want to compare more numbers? (yes/no): ").lower()
+    user_input = input("Do you want to compare more numbers? (yes/no): ").lower()
 
     # Check if the user wants to continue or not
     if user_input != 'yes':
