@@ -1,23 +1,22 @@
+"""
+Python variables are containers used to store data values. Unlike other programming languages, Python does not require you to declare the data type of a variable before assigning a value to it. Instead, the data type of a variable is determined dynamically at runtime based on the value assigned to it.
 
 """
-https://www.w3schools.com/python/python_variables.asp
 
-"""
-# Ask the user for their name
-name = input("What is your name? ")
+# You can assign a value to a variable using the equal sign (=) operator. For example:
+x = 5
 
-# Ask the user for their age
-age = input("How old are you? ")
+# In the above example, the variable x is assigned the value of 5. You can also assign multiple variables at once by separating the values with commas, like this:
 
-# Ask the user for their favorite color
-favorite_color = input("What is your favorite color? ")
 
-# Ask the user for their favorite food
-favorite_food = input("What is your favorite food? ")
+x, y, z = 1, 2, 3
+# In the above example, x is assigned the value 1, y is assigned the value 2, and z is assigned the value 3.
 
-# Display the information provided by the user
-print("\nHere is the information you provided:")
-print("Name:", name)
-print("Age:", age)
-print("Favorite Color:", favorite_color)
-print("Favorite Food:", favorite_food)
+
+# You can use variables in Python to perform various operations, including arithmetic, string manipulation, and more. For example:
+x = 5
+y = 10
+z = x + y
+print(z)  # Output: 15
+
+# In the above example, x is assigned the value 5, y is assigned the value 10, and z is assigned the value of x + y, which is 15. The print() function is then used to display the value of z on the console.

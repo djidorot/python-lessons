@@ -1,12 +1,18 @@
+# Function is a block of code (mini program), organize, reuse, call many times, we can pass parameters,
+def main():
 
-name = input("\nEnter your name: ")
-age = input("Enter your age: ")
-city = input("Enter your city: ")
-occupation = input("Enter your occupation: ")
+    # Variables is like a container where we can store data like strings and numbers
+    name = input("Type your name: ")
+    
+    # Int that converts the string into number
+    age = int(input("Type your age: "))
+    birthday = input("Type your birthday: ")
+    address = input("Type your address: ")
 
-# Display the collected information
-print("\nPersonal Information:")
-print("Name: ", name)
-print("Age: ", age)
-print("City: ", city)
-print("Occupation: ", occupation)
+    # print function, it will print the value
+    # f-string: is a string formatting, concatenate or connect different values.
+    # New line: break line
+    print(f"\nYour personal info: \nName: {name}\nAge: {age}\nBirthday: {birthday}\nAddress: {address}")
+
+# Call the function
+main()
