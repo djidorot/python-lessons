@@ -10,5 +10,5 @@ What is the area of the garden?
 """
 Area = 7.5 * 3
 
-type(Area)
+print(type(Area))
 print(Area)
