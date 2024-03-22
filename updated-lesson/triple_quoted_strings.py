@@ -21,33 +21,41 @@ sentence9 = '''This is a multiline string.
 It contains 'single quotes' and escape characters.
 Don\'t overlook their importance.'''
 
+print()
 print(sentence1)
 print(sentence2)
 print(sentence3)
+
+print()
 print(sentence4)
 print(sentence5)
 print(sentence6)
+
+print()
 print(sentence7)
 print(sentence8)
 print(sentence9)
-
+print()
 
 ##########################################################################
+# print()
+# print('She said, \'Hello, how are you?\'')
+# print("He exclaimed, \"That's amazing!\"")
+# print('''This is a multiline string.
+# It spans across multiple lines.
+# Don\'t forget to escape special characters.''')
 
-print('She said, \'Hello, how are you?\'')
-print("He exclaimed, \"That's amazing!\"")
-print('''This is a multiline string.
-It spans across multiple lines.
-Don\'t forget to escape special characters.''')
+# print()
+# print('They whispered, \'We\'ll meet again.\'')
+# print("The sign read, \"Don't touch.\"")
+# print("""This is a multiline string.
+# It uses "double quotes" for emphasis.
+# Remember to escape special characters like \"this\".""")
 
-print('They whispered, \'We\'ll meet again.\'')
-print("The sign read, \"Don't touch.\"")
-print("""This is a multiline string.
-It uses "double quotes" for emphasis.
-Remember to escape special characters like \"this\".""")
-
-print('The cat meowed, \'Feed me!\'.')
-print("The dog barked, \"Let's play fetch!\"")
-print('''This is a multiline string.
-It contains 'single quotes' and escape characters.
-Don\'t overlook their importance.''')
+# print()
+# print('The cat meowed, \'Feed me!\'.')
+# print("The dog barked, \"Let's play fetch!\"")
+# print('''This is a multiline string.
+# It contains 'single quotes' and escape characters.
+# Don\'t overlook their importance.''')
+# print()
