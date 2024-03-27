@@ -32,3 +32,4 @@ def check_voting_eligibility():
 
 # Call the function to execute the operations
 check_voting_eligibility()
+
