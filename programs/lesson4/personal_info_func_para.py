@@ -8,7 +8,7 @@ Name: [user's name]
 Age: [user's age]
 Email: [user's email]
 
-Write a Python function called personal_info that takes three arguments: name, age, and email. The function should print the user’s personal information as shown above.
+Write a Python function called personal_info that takes three arguments: name, age, and email. The function should print the user's personal information as shown above.
 
 Your task is to implement the personal_info function and test it by collecting input from the user and displaying their personal details.
 
