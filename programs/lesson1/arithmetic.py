@@ -59,3 +59,14 @@ print("Exponentiation:", result_exponentiation)
 # Modulo
 result_modulo = 17 % 5
 print("Modulo:", result_modulo)
+
+
+"""
+1. Addition: result_addition = 5 + 3 adds 5 and 3 together, resulting in 8.
+2. Subtraction: result_subtraction = 10 - 4 subtracts 4 from 10, resulting in 6.
+3. Multiplication: result_multiplication = 6 * 7 multiplies 6 and 7 together, resulting in 42.
+4. Division: result_division = 15 / 3 divides 15 by 3, resulting in 5.0 (as it's a float division).
+5. Exponentiation: result_exponentiation = 2 ** 4 raises 2 to the power of 4, resulting in 16.
+6. Modulo: result_modulo = 17 % 5 finds the remainder when 17 is divided by 5, resulting in 2.
+
+"""

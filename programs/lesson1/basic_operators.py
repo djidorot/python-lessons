@@ -1,42 +1,30 @@
 """
-Objective: Write a Python program that performs basic arithmetic operations on two numbers using arithmetic operators.
+Problem Statement:
+You are tasked with creating a Python script to perform basic arithmetic operations on two numbers, num1 and num2. The script should calculate the following:
 
-Instructions:
-Open your preferred Python editor or IDE (Integrated Development Environment).
+Addition of num1 and num2.
+Subtraction of num2 from num1.
+Multiplication of num1 and num2.
+Division of num1 by num2.
+Modulus of num1 divided by num2.
+Exponentiation of num1 raised to the power of num2.
 
-Create a new Python file.
+Use the given values:
+num1 = 10
+num2 = 3
 
-Start by defining two variables num1 and num2 and assign them values (e.g., num1 = 10, num2 = 3).
+Your script should print the results of each operation in the following format:
 
-Directly perform the following arithmetic operations on these numbers:
-Addition
-Subtraction
-Multiplication
-Division
-Modulus
-Exponentiation
+Addition: {num1} + {num2} = {addition_result}
+Subtraction: {num1} - {num2} = {subtraction_result}
+Multiplication: {num1} * {num2} = {multiplication_result}
+Division: {num1} / {num2} = {division_result}
+Modulus: {num1} % {num2} = {modulus_result}
+Exponentiation: {num1} ** {num2} = {exponentiation_result}
 
-Use the appropriate arithmetic operators for each operation.
+Implement the Python script and verify that it produces the correct results.
 
-Print the results of each operation using print() statements.
 
-Save the file with a descriptive name, for example, arithmetic_operations.py.
-
-Run the program.
-
-Observe the output, which will display the results of various arithmetic operations on the assigned numbers.
-
-Analyze the code to understand how each arithmetic operation is performed using Python's arithmetic operators.
-
-Experiment with changing the values of num1 and num2 to see how it affects the results.
-
-Challenge: Try adding additional arithmetic operations or modifying the program to take user input for the numbers.
-
-Challenge: Explore other Python arithmetic operators that were not used in the initial code and try implementing them.
-
-Save your changes and, if necessary, ask questions or seek clarification.
-
-Happy coding!
 """
 
 # Arithmetic Operators Program
