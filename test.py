@@ -1,25 +1,34 @@
-# Addition
-num1 = 10
-num2 = 5
-sum_result = num1 + num2
-print("Sum:", sum_result)
+"""
+Problem Statement:
+You are tasked with creating a program that calculates and assigns grades based on the marks obtained by a student in an exam.
 
-# Subtraction
-sub_result = num1 - num2
-print("Difference:", sub_result)
+Your program should prompt the user to enter the marks obtained by the student. It should then use the following grading criteria to determine the grade:
 
-# Multiplication
-mul_result = num1 * num2
-print("Product:", mul_result)
+A: 90 or above
+B: 80 - 89
+C: 70 - 79
+D: 60 - 69
+E: 50 - 59
+F: Below 50
 
-# Division
-div_result = num1 / num2
-print("Quotient:", div_result)
+Write a Python program to implement the above functionality. Ensure that your program provides clear prompts for input and displays the assigned grade.
 
-# Modulus (Remainder)
-mod_result = num1 % num2
-print("Remainder:", mod_result)
+Your program should follow the structure outlined in the provided code snippet. Make sure to handle both integer and floating-point input for marks obtained.
 
-# Exponentiation
-exp_result = num1 ** num2
-print("Exponentiation:", exp_result)
+Remember, your program should not accept negative marks or marks greater than 100. If the user enters invalid marks, your program should display an appropriate error message and prompt the user to enter valid marks.
+"""
+
+marks = input("Enter the marks obtained: ")
+
+if marks >= 90:
+    grade = 'A'
+elif marks >= 80:
+    grade = 'B'
+elif marks >= 70:
+    grade = 'C'
+elif marks >= 60:
+    grade = 'D'
+elif marks >= 50:
+    grade = 'E'
+else:
+    grade = 'F'

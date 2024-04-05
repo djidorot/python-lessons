@@ -13,11 +13,9 @@ Your task is to:
 
 """
 
-
-# Take user input for age
 age = int(input("Enter your age: "))
+print(type(age))
 
-# Check if the age is old enough to vote
 if age < 18:
     print("You are not old enough to vote.")
 else:
