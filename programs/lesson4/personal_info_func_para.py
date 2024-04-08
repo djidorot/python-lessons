@@ -15,15 +15,22 @@ Your task is to implement the personal_info function and test it by collecting i
 """
 
 
+# Define a function named personal_info that takes three parameters: name, age, and email
 def personal_info(name, age, email):
+    # Print a message indicating that the personal information is being displayed
     print("Your Personal Information:")
+    # Print the name parameter
     print("Name:", name)
+    # Print the age parameter
     print("Age:", age)
+    # Print the email parameter
     print("Email:", email)
 
 
+# Get user input for name, age, and email
 name_input = input("Enter your name: ")
 age_input = input("Enter your age: ")
 email_input = input("Enter your email: ")
 
+# Call the personal_info function with the user-provided inputs as arguments
 personal_info(name_input, age_input, email_input)
