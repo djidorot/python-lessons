@@ -7,6 +7,7 @@ Your program should perform the selected operation on the two input numbers and 
 Write a Python program to implement the above functionality. Ensure that your program provides clear prompts and output messages to guide the user through the process.
 
 Your program should follow the structure outlined in the provided code snippet. You are not allowed to use any external libraries or predefined functions for arithmetic operations.
+
 """
 
 # Get user input for two numbers
