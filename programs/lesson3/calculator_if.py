@@ -1,61 +1,39 @@
 """
-Problem Statement: Simple Calculator Program
+Problem Statement:
+You are tasked with creating a simple arithmetic calculator program in Python. Your program should prompt the user to enter two numbers and then ask for the type of arithmetic operation they want to perform. The available operations are addition (+), subtraction (-), multiplication (*), and division (/).
 
-You are tasked with creating a simple calculator program in Python. The program should display a menu with the following options:
+Your program should perform the selected operation on the two input numbers and display the result. If the user attempts to divide by zero, your program should handle this case and display an appropriate error message.
 
-Addition
-Subtraction
-Multiplication
-Division
-Exit
+Write a Python program to implement the above functionality. Ensure that your program provides clear prompts and output messages to guide the user through the process.
 
-The program should prompt the user to enter their choice by inputting a number from 1 to 5. Based on the user's choice, the program should perform the corresponding arithmetic operation on two numbers entered by the user.
-
-If the user selects addition (option 1), the program should ask the user to input two numbers and then display the result of adding them.
-
-If the user selects subtraction (option 2), the program should ask the user to input two numbers and then display the result of subtracting the second number from the first.
-
-If the user selects multiplication (option 3), the program should ask the user to input two numbers and then display the result of multiplying them.
-
-If the user selects division (option 4), the program should ask the user to input two numbers. If the second number is zero, the program should display an error message saying "Cannot divide by zero!". Otherwise, it should display the result of dividing the first number by the second.
-
-If the user selects exit (option 5), the program should display a farewell message and terminate.
-
-If the user inputs an invalid option (anything other than 1 to 5), the program should display a message saying "Invalid input. Please enter a valid option."
-
-Your task is to implement this calculator program in Python using the provided code structure as a guide. Ensure that your program behaves as described above and handles input validation appropriately.
+Your program should follow the structure outlined in the provided code snippet. You are not allowed to use any external libraries or predefined functions for arithmetic operations.
 """
 
-print("Welcome to Simple Calculator")
+# Get user input for two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
-# Display menu
-print("\nSelect operation:")
-print("1. Addition")
-print("2. Subtraction")
-print("3. Multiplication")
-print("4. Division")
-print("5. Exit")
+# Ask the user for the type of operation
+operator = input("Enter the operator (+, -, *, /): ")
 
-# Take input from the user
-choice = input("Enter choice (1/2/3/4/5): ")
+# Perform arithmetic operations based on the operator
+if operator == '+':
+    result = num1 + num2
+    print(f"Sum: {num1} + {num2} = {result}")
 
-# Check if choice is one of the four options
-if choice in ('1', '2', '3', '4'):
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
+elif operator == '-':
+    result = num1 - num2
+    print(f"Difference: {num1} - {num2} = {result}")
 
-    if choice == '1':
-        print("Result:", num1 + num2)
-    elif choice == '2':
-        print("Result:", num1 - num2)
-    elif choice == '3':
-        print("Result:", num1 * num2)
-    elif choice == '4':
-        if num2 == 0:
-            print("Cannot divide by zero!")
-        else:
-            print("Result:", num1 / num2)
-elif choice == '5':
-    print("Thank you for using Simple Calculator. Goodbye!")
+elif operator == '*':
+    result = num1 * num2
+    print(f"Product: {num1} * {num2} = {result}")
+
+elif operator == '/':
+    if num2 != 0:
+        result = num1 / num2
+        print(f"Division: {num1} / {num2} = {result}")
+    else:
+        print("Error: Division by zero is not allowed.")
 else:
-    print("Invalid input. Please enter a valid option.")
+    print("Invalid operator. Please enter +, -, *, or /.")
