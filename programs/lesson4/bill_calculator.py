@@ -1,41 +1,33 @@
+
 """
+Problem Statement:
+
+You are tasked with developing a Python program to calculate the total cost of a meal, including tax and tip. Your program should prompt the user to enter the cost of the meal and the desired tip percentage, and then calculate and display the total cost.
+
+Here are the requirements for your program:
+
+1. Prompt the user to input the cost of the meal as a floating-point number.
+2. Prompt the user to input the desired tip percentage as an integer. For example, if the user wants to leave a 15% tip, they should input '15'.
+3. Calculate the total cost of the meal, including an 8% tax and the tip provided by the user.
+4. Ensure that the tip percentage entered by the user is valid. If the tip percentage is less than 0, display an error message and prompt the user to enter a valid tip percentage.
+5. Display the total cost of the meal, including tax and tip, rounded to two decimal places.
+
+Your task is to implement the calculate_total_cost function, which takes the cost of the meal and the tip percentage as arguments, and returns the total cost of the meal. Additionally, you need to write the code to prompt the user for input, call the calculate_total_cost function, and display the total cost of the meal.
 
 """
 
 
 def calculate_total_cost(meal_cost, tip_percentage):
-    """
-    Calculate the total cost of the meal including tax and tip.
-
-    Parameters:
-    meal_cost (float): The cost of the meal.
-    tip_percentage (float): The tip percentage to leave.
-
-    Returns:
-    float: The total cost of the meal including tax and tip.
-    """
-    # Check if the tip percentage is valid (greater than or equal to 0)
-    if tip_percentage < 0:
-        print("Please enter a valid tip percentage.")
-        return None
-    else:
-        # Calculate the total cost including tax and tip
-        tax_rate = 0.08  # 8% tax rate
-        tax_amount = meal_cost * tax_rate
-        tip_amount = meal_cost * (tip_percentage / 100)
-        total_cost = meal_cost + tax_amount + tip_amount
-        return total_cost
+    tax_rate = 0.08
+    tax_amount = meal_cost * tax_rate
+    tip_amount = meal_cost * (tip_percentage / 100)
+    return meal_cost + tax_amount + tip_amount
 
 
-# Get user input for meal cost and tip percentage
 meal_cost = float(input("Enter the cost of the meal: $"))
 tip_percentage = float(
     input("Enter the tip percentage you want to leave (e.g., 15 for 15%): "))
 
-# Calculate total cost using the function
 total_cost = calculate_total_cost(meal_cost, tip_percentage)
-
-# Print the total cost if it's not None
-if total_cost is not None:
-    print(
-        f"The total cost of the meal, including tax and tip, is: ${total_cost:.2f}")
+print(
+    f"The total cost of the meal, including tax and tip, is: ${total_cost:.2f}")

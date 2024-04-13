@@ -1,40 +1,37 @@
+
 """
 Problem Statement:
-You are tasked with creating a simple arithmetic calculator program in Python. Your program should prompt the user to enter two numbers and then ask for the type of arithmetic operation they want to perform. The available operations are addition (+), subtraction (-), multiplication (*), and division (/).
 
-Your program should perform the selected operation on the two input numbers and display the result. If the user attempts to divide by zero, your program should handle this case and display an appropriate error message.
+You are tasked with developing a Python program to calculate the total cost of a meal, including tax and tip. Your program should prompt the user to enter the cost of the meal and the desired tip percentage, and then calculate and display the total cost.
 
-Write a Python program to implement the above functionality. Ensure that your program provides clear prompts and output messages to guide the user through the process.
+Here are the requirements for your program:
 
-Your program should follow the structure outlined in the provided code snippet. You are not allowed to use any external libraries or predefined functions for arithmetic operations.
+1. Prompt the user to input the cost of the meal as a floating-point number.
+2. Prompt the user to input the desired tip percentage as an integer. For example, if the user wants to leave a 15% tip, they should input '15'.
+3. Calculate the total cost of the meal, including an 8% tax and the tip provided by the user.
+4. Ensure that the tip percentage entered by the user is valid. If the tip percentage is less than 0, display an error message and prompt the user to enter a valid tip percentage.
+5. Display the total cost of the meal, including tax and tip, rounded to two decimal places.
+
+Your task is to implement the calculate_total_cost function, which takes the cost of the meal and the tip percentage as arguments, and returns the total cost of the meal. Additionally, you need to write the code to prompt the user for input, call the calculate_total_cost function, and display the total cost of the meal.
 
 """
 
-# Get user input for two numbers
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
 
-# Ask the user for the type of operation
-operator = input("Enter the operator (+, -, *, /): ")
+def calculate_total_cost(meal_cost, tip_percentage):
+    tax_rate = 0.08
+    tax_amount = meal_cost * tax_rate
+    tip_amount = meal_cost * (tip_percentage / 100)
+    return meal_cost + tax_amount + tip_amount
 
-# Perform arithmetic operations based on the operator
-if operator == '+':
-    result = num1 + num2
-    print(f"Sum: {num1} + {num2} = {result}")
 
-elif operator == '-':
-    result = num1 - num2
-    print(f"Difference: {num1} - {num2} = {result}")
+print()
+meal_cost = float(input("Enter the cost of the meal: $"))
+tip_percentage = float(
+    input("Enter the tip percentage you want to leave (e.g., 15 for 15%): "))
 
-elif operator == '*':
-    result = num1 * num2
-    print(f"Product: {num1} * {num2} = {result}")
+total_cost = calculate_total_cost(meal_cost, tip_percentage)
 
-elif operator == '/':
-    if num2 != 0:
-        result = num1 / num2
-        print(f"Division: {num1} / {num2} = {result}")
-    else:
-        print("Error: Division by zero is not allowed.")
-else:
-    print("Invalid operator. Please enter +, -, *, or /.")
+print()
+print(
+    f"The total cost of the meal, including tax and tip, is: ${total_cost:.2f}")
+print()
