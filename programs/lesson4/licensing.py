@@ -11,13 +11,13 @@ Write a Python script that implements the above requirements. Ensure that your c
 
 def check_license_eligibility(age):
     if age >= 18:
-        print("Congratulations! You are eligible for a driver's license.")
+        print("\nCongratulations! You are eligible for a driver's license.\n")
     elif age >= 16:
-        print("You are eligible for a learner's permit.")
+        print("\nYou are eligible for a learner's permit.\n")
     else:
-        print("Sorry, you are not eligible for a driver's license yet.")
+        print("\nSorry, you are not eligible for a driver's license yet.\n")
 
 
 # Ask the user for their age
-age = int(input("Please enter your age: "))
+age = int(input("\nPlease enter your age: "))
 check_license_eligibility(age)
