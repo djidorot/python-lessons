@@ -13,7 +13,9 @@ Write a Python program that prompts the user to enter their age and then determi
 Your program should define a function called determine_grade that takes an integer parameter age and implements the above logic to determine the educational stage. After defining the function, prompt the user to input their age and call the determine_grade function with the provided age.
 
 Ensure that your program handles invalid input gracefully, such as non-integer values for age. If the user enters a non-integer value, your program should print "Invalid input. Please enter a valid age." and prompt the user to input their age again until a valid integer value is provided.
+
 """
+
 
 
 def determine_grade(age):

@@ -25,9 +25,9 @@ def calculate_total_cost(meal_cost, tip_percentage):
 
 
 meal_cost = float(input("\nEnter the cost of the meal: $"))
-tip_percentage = float(
-    input("Enter the tip percentage you want to leave (e.g., 15 for 15%): "))
+tip_percentage = float(input("Enter the tip percentage you want to leave (e.g., 15 for 15%): "))
 
 total_cost = calculate_total_cost(meal_cost, tip_percentage)
-print(
-    f"\nThe total cost of the meal, including tax and tip, is: ${total_cost:.2f}\n")
+print(f"\nThe total cost of the meal, including tax and tip, is: ${total_cost:.2f}\n")
+
+

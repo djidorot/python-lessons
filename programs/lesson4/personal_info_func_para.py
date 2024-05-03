@@ -34,3 +34,4 @@ email_input = input("Enter your email: ")
 
 # Call the personal_info function with the user-provided inputs as arguments
 personal_info(name_input, age_input, email_input)
+
