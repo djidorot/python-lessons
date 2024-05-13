@@ -1,52 +1,93 @@
-"""
-In Python, a list is a built-in data structure used to store a collection of items. It's a mutable, ordered sequence of elements, meaning you can change its content, and the elements in a list maintain their order. Lists are versatile and can contain elements of different types, such as integers, strings, or even other lists.
-
-You can create a list using square brackets [] and separating the elements with commas. Here's an example:
-"""
-
-my_list = [1, 2, 3, 4, 5]
-
+# Video: https://www.youtube.com/watch?v=9OeznAkyQz4
 
 """
-You can access elements in a list using indexing. Indexing starts from 0, so my_list[0] would give you the first element (1 in this case), my_list[1] would give you the second element (2), and so on.
+In Python, a list is a collection of items that are ordered and changeable. It is one of the built-in data types and is very versatile. Lists are denoted by square brackets [] and can contain any data type, including other lists. Each item in a list has an index, starting from 0 for the first item, and can be accessed using square brackets with the index number.
 
-Lists also support slicing, which allows you to access a subset of elements. For example, my_list[1:4] would give you a sublist containing elements from index 1 to 3 ([2, 3, 4]).
-
-Lists offer various methods for adding, removing, and manipulating elements. Some common methods include append(), extend(), insert(), remove(), pop(), index(), count(), sort(), and reverse(). These methods make lists very flexible and powerful for managing collections of data in Python.
 """
+
+# Here is an example of creating a list:
+my_list = [1, 2, 3, "hello", "world"]
+
+
+# You can access the elements of a list using indexing like this:
+print(my_list[0])   # prints 1
+print(my_list[3])   # prints "hello"
+
+
+# You can also use negative indexing to access elements from the end of the list, like this:
+print(my_list[-1])  # prints "world"
+print(my_list[-2])  # prints "hello"
+
+
+# You can add elements to a list using the append() method like this:
+my_list.append(4)
+
+
+# You can also insert elements at a specific index using the insert() method:
+my_list.insert(1, "new item")
+
+
+# You can remove elements from a list using the remove() method like this:
+my_list.remove(2)
+
+
+# And you can check if an item is in a list using the in keyword:
+if "hello" in my_list:
+    print("hello is in the list")
+
+
+"""
+Lists are very useful in Python and are used in many applications.
+
+"""
+
 
 # Example Program
 # Creating a list
-my_list = [1, 2, 3, 4, 5]
+fruits = ['apple', 'banana', 'cherry', 'date']
 
 # Accessing elements
-print("Elements in the list:")
-for element in my_list:
-    print(element)
+print("Fruits:", fruits)
+print("First fruit:", fruits[0])
+print("Last fruit:", fruits[-1])
 
-# Adding elements to the list
-my_list.append(6)
-print("After appending 6:", my_list)
+# Slicing a list
+print("Sliced list:", fruits[1:3])
 
-# Removing an element
-my_list.remove(3)
-print("After removing 3:", my_list)
+# Modifying elements
+fruits[0] = 'avocado'
+print("Modified fruits:", fruits)
 
-# Accessing a subset using slicing
-print("Sublist from index 1 to 3:", my_list[1:4])
+# Adding elements
+fruits.append('elderberry')
+print("After append:", fruits)
 
-# Finding index of an element
-index_of_5 = my_list.index(5)
-print("Index of 5:", index_of_5)
+# Removing elements
+removed_fruit = fruits.pop(2)
+print("Removed fruit:", removed_fruit)
+print("After pop:", fruits)
 
-# Counting occurrences of an element
-count_of_2 = my_list.count(2)
-print("Count of 2:", count_of_2)
+# Length of a list
+print("Length of the list:", len(fruits))
 
-# Sorting the list
-my_list.sort()
-print("Sorted list:", my_list)
+# Checking existence of an element
+print("Is 'banana' in the list?", 'banana' in fruits)
 
-# Reversing the list
-my_list.reverse()
-print("Reversed list:", my_list)
+# Looping through a list
+print("Looping through the list:")
+for fruit in fruits:
+    print(fruit)
+
+# Sorting a list
+fruits.sort()
+print("Sorted list:", fruits)
+
+# Reversing a list
+fruits.reverse()
+print("Reversed list:", fruits)
+
+# Clearing a list
+fruits.clear()
+print("Cleared list:", fruits)
+
+# This program demonstrates how to create a list, access elements by index, slice a list, modify elements, add and remove elements, get the length of a list, check the existence of an element, loop through a list, sort and reverse a list, and clear a list. Feel free to run the code and observe the output!

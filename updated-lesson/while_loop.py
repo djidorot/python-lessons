@@ -1,40 +1,38 @@
 """
-In Python, a "while" loop is a control flow statement that allows you to repeatedly execute a block of code as long as a specified condition is true. It consists of a condition followed by an indented block of code. The code inside the block will be executed repeatedly until the condition evaluates to False.
+In Python, a while loop is used to repeatedly execute a block of code as long as a particular condition is true.
 
-Here's the basic syntax of a while loop in Python:
 """
 
-condition = "Boolean"
-
+# Here is the basic syntax for a while loop:
+"""
 while condition:
-    # Code block to be executed while the condition is true
-    # This block will be repeated until the condition becomes false
-    pass
-
-# For example, a simple while loop that counts from 1 to 5 could look like this:
-count = 1
-while count <= 5:
-    print(count)
-    count += 1
+    # code to execute while condition is true
 
 """
-In this example, the loop will execute as long as the condition count <= 5 is true. The variable count starts at 1, and with each iteration, it is incremented by 1 until it reaches 6. Once count becomes 6, the condition count <= 5 becomes false, and the loop terminates.
+
+"""
+The code inside the loop will continue to execute as long as the condition remains true. The condition is evaluated at the beginning of each iteration of the loop, so if the condition is initially false, the loop will not execute at all.
+
 """
 
+# Here is an example of a while loop that prints the numbers from 1 to 5:
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
 
-# Example Program
-# Initialize variables
-total = 0
-number = 0
 
-# Keep asking for numbers until a negative number is entered
-while number >= 0:
-    # Ask the user for input
-    number = int(input("Enter a number (enter a negative number to stop): "))
+# This will output:
+"""
+1
+2
+3
+4
+5
 
-    # Check if the number is positive
-    if number >= 0:
-        total += number  # Add the positive number to the total
+"""
 
-# Print the sum of all positive numbers entered
-print("The sum of all positive numbers entered is:", total)
+# In this example, the loop starts with i equal to 1. The loop will continue to execute as long as i is less than or equal to 5. Inside the loop, the current value of i is printed, and then i is incremented by 1 using the += operator. This continues until i becomes 6, at which point the condition becomes false and the loop exits.
+
+
+

@@ -1,16 +1,22 @@
-"""
-isdigit() is a method in Python that checks whether all characters in a string are digits. It returns True if all characters in the string are digits and there is at least one character, otherwise, it returns False.
+# In Python, isdigit() is a built-in method that is used to check whether a given string consists of only digits or not. This method returns a Boolean value, True if all the characters in the string are digits and False otherwise.
 
-Here's an example:
-"""
 string1 = "12345"
-string2 = "abc123"
-string3 = "123 456"
+string2 = "12A45"
 
-print(string1.isdigit())  # Output: True
-print(string2.isdigit())  # Output: False
-print(string3.isdigit())  # Output: False
+print(string1.isdigit()) # Output: True
+print(string2.isdigit()) # Output: False
 
-"""
-In this example, string1 consists only of digits, so isdigit() returns True. string2 contains alphabetic characters, so isdigit() returns False. string3 contains a space, so isdigit() also returns False.
-"""
+# In the above example, isdigit() method is called on two different strings. string1 contains only digits and returns True, whereas string2 contains an alphabet character 'A' and returns False.
+
+
+# Example Program
+# Take input from user
+string = input("Enter a string: ")
+
+# Check if all characters in the string are digits or not
+if string.isdigit():
+    print("The string consists of only digits.")
+else:
+    print("The string does not consist of only digits.")
+
+# In the above program, we take a string as input from the user using the input() function. Then, we call the isdigit() method on the string to check whether it consists of only digits or not. If the method returns True, we print a message saying that the string consists of only digits. Otherwise, we print a message saying that the string does not consist of only digits.
