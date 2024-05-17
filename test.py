@@ -1,32 +1,28 @@
 """
 Problem Statement:
 
-Write a Python program that determines a student's eligibility for a driver's license or learner's permit based on their age. Your program should prompt the user to enter their age. If the age provided is 18 or above, the program should display a message congratulating the student on being eligible for a driver's license. If the age provided is 16 or above but less than 18, the program should inform the student that they are eligible for a learner's permit. If the age provided is below 16, the program should notify the student that they are not yet eligible for a driver's license.
+Write a Python program called "Temperature Converter" that prompts the user to enter a temperature in Celsius and converts it to Fahrenheit using a defined function.
 
-Your program should continuously prompt the user for their age until a valid age (a positive integer) is entered. Ensure that your program handles invalid inputs gracefully, providing clear instructions to the user on how to enter a valid age.
+Your program should include the following steps:
+1. Define a function called celsius_to_fahrenheit that takes one parameter celsius representing the temperature in 2. Celsius. This function should return the equivalent temperature in Fahrenheit calculated using the formula (celsius * 9/5) + 32.
+3. Prompt the user to input the temperature in Celsius.
+4. Convert the Celsius temperature to Fahrenheit using the celsius_to_fahrenheit function.
+5. Print the original Celsius temperature and the converted Fahrenheit temperature with two decimal places.
 
 """
 
 
-def check_license_eligibility(age):
-    if age >= 18:
-        print("\nCongratulations! You are eligible for a driver's license.\n")
-    elif age >= 16:
-        print("\nYou are eligible for a learner's permit.\n")
-    else:
-        print("\nSorry, you are not eligible for a driver's license yet.\n")
+def celsius_to_fahrenheit(celsius):
+    """Converts temperature from Celsius to Fahrenheit"""
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
 
 
-# Ask the user for their age
-while True:
-    age_input = input("\nPlease enter your age: ")
-    if age_input.isdigit():
-        age = int(age_input)
-        if age > 0:
-            break
-        else:
-            print("Please enter a positive age.")
-    else:
-        print("Please enter a valid age as a number.")
+# Input temperature in Celsius
+celsius = float(input("\nEnter temperature in Celsius: "))
 
-check_license_eligibility(age)
+# Convert Celsius to Fahrenheit
+fahrenheit = celsius_to_fahrenheit(celsius)
+
+# Display the result
+print(f"\n{celsius} degrees Celsius is equal to {fahrenheit:.2f} degrees Fahrenheit.\n")

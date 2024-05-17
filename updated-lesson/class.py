@@ -4,11 +4,12 @@ In Python, the "class" is a fundamental concept of object-oriented programming (
 Here's the basic syntax for defining a class in Python:
 """
 
+
 class ClassName:
     pass
     # Class variables and methods go here
 
-    def __init__(self, value1, value2, value...):
+    def __init__(self, value1, value2, value3):
         pass
         # Constructor (initializer) method
         # This method is called when an object is created
@@ -55,6 +56,7 @@ class Car:
     def get_speed(self):
         return self.speed
 
+
 # Create car objects
 car1 = Car("Toyota", "Corolla", 2022)
 car2 = Car("Honda", "Civic", 2021)
@@ -96,7 +98,8 @@ class BankAccount:
             print("Insufficient balance or invalid withdrawal amount.")
 
     def check_balance(self):
-        print(f"Account balance for {self.account_holder}: ${self.balance:.2f}")
+        print(
+            f"Account balance for {self.account_holder}: ${self.balance:.2f}")
 
 
 # Example usage of the BankAccount class
