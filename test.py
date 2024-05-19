@@ -1,28 +1,26 @@
 """
+
 Problem Statement:
 
-Write a Python program called "Temperature Converter" that prompts the user to enter a temperature in Celsius and converts it to Fahrenheit using a defined function.
+Write a Python program that prompts the user to enter their age. Based on the provided age, the program should determine and print out the eligibility status for obtaining a driver's license.
 
-Your program should include the following steps:
-1. Define a function called celsius_to_fahrenheit that takes one parameter celsius representing the temperature in 2. Celsius. This function should return the equivalent temperature in Fahrenheit calculated using the formula (celsius * 9/5) + 32.
-3. Prompt the user to input the temperature in Celsius.
-4. Convert the Celsius temperature to Fahrenheit using the celsius_to_fahrenheit function.
-5. Print the original Celsius temperature and the converted Fahrenheit temperature with two decimal places.
-
+Your program should follow these guidelines:
+    Prompt the user with the message: "Please enter your age: ".
+    Convert the user's input to an integer.
+    Use conditional statements (if, elif, and else) to check the age entered by the user.
+    If the age is 18 or older, print: "Congratulations! You are eligible for a driver's license."
+    If the age is between 16 and 17 (inclusive), print: "You are eligible for a learner's permit."
+    If the age is below 16, print: "Sorry, you are not eligible for a driver's license yet."
+    
 """
 
+# Ask the user for their age
+age = int(input("Please enter your age: "))
 
-def celsius_to_fahrenheit(celsius):
-    """Converts temperature from Celsius to Fahrenheit"""
-    fahrenheit = (celsius * 9/5) + 32
-    return fahrenheit
-
-
-# Input temperature in Celsius
-celsius = float(input("\nEnter temperature in Celsius: "))
-
-# Convert Celsius to Fahrenheit
-fahrenheit = celsius_to_fahrenheit(celsius)
-
-# Display the result
-print(f"\n{celsius} degrees Celsius is equal to {fahrenheit:.2f} degrees Fahrenheit.\n")
+# Check if the user is eligible for a driver's license
+if age >= 18:
+    print("Congratulations! You are eligible for a driver's license.")
+elif age >= 16:
+    print("You are eligible for a learner's permit.")
+else:
+    print("Sorry, you are not eligible for a driver's license yet.")
