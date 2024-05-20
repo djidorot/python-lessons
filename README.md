@@ -50,16 +50,11 @@ To ensure a smooth learning experience, we recommend the following development e
 
 Our course materials are derived from a variety of reputable sources to ensure high-quality content:
 
-- Official Python Documentation: Python Docs
-- NumPy Documentation: NumPy Docs
-- TensorFlow Documentation: TensorFlow Docs
-- Keras Documentation: Keras Docs
-- Scikit-learn Documentation: Scikit-learn Docs
-- NLTK Documentation: NLTK Docs
-- Apache Hadoop Documentation: Hadoop Docs
-- Apache Spark Documentation: Spark Docs
-- MongoDB Documentation: MongoDB Docs
-- IBM Watson Documentation: IBM Watson Docs
+- Official Python Documentation: [Python Docs] (https://docs.python.org/3/)
+- NumPy Documentation: [NumPy Docs](https://numpy.org/doc/)
+- TensorFlow Documentation: [TensorFlow Docs](https://www.tensorflow.org/api_docs)
+- Keras Documentation: [Keras Docs](https://keras.io/guides/)
+- Scikit-learn Documentation: [Scikit-learn Docs](https://scikit-learn.org/stable/tutorial/index.html)
 
 ## Best Practices
 
