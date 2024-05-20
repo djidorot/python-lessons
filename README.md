@@ -80,6 +80,7 @@ To ensure the best learning experience, please adhere to the following best prac
 
 ### Documentation
 
+- [Google Docs - Python Lessons] (https://docs.google.com/document/d/1ZnEZ1orEGwHf9SFowyRHUIMfnVSVfL3P3LDBknd-ahU/edit?usp=sharing)
 - Maintain comprehensive documentation for your projects
 - Include README files with project overviews, setup instructions, and usage guidelines
 - Use docstrings to document functions and classes
