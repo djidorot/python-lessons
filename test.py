@@ -1,27 +1,48 @@
-"""
+def perform_operation(num1, num2, operator):
+    """
+    Perform arithmetic operations based on the operator.
 
-Problem Statement:
+    Args:
+    num1 (float): The first number.
+    num2 (float): The second number.
+    operator (str): The operator (+, -, *, /).
 
-Write a Python program that prompts the user to enter their age. Based on the provided age, the program should determine and print out the eligibility status for obtaining a driver's license.
+    Returns:
+    float: The result of the operation.
+    """
+    if operator == '+':
+        return num1 + num2
+    elif operator == '-':
+        return num1 - num2
+    elif operator == '*':
+        return num1 * num2
+    elif operator == '/':
+        if num2 != 0:
+            return num1 / num2
+        else:
+            print("Error: Division by zero is not allowed.")
+            return None
+    else:
+        print("Invalid operator. Please enter +, -, *, or /.")
+        return None
 
-Your program should follow these guidelines:
-1. Prompt the user with the message: "Please enter your age: ".
-2. Convert the user's input to an integer.
-3. Use conditional statements (if, elif, and else) to check the age entered by the user.
-4. If the age is 18 or older, print: "Congratulations! You are eligible for a driver's license."
-5. If the age is between 16 and 17 (inclusive), print: "You are eligible for a learner's permit."
-6. If the age is below 16, print: "Sorry, you are not eligible for a driver's license yet."
-    
-"""
 
+while True:
+    # Get user input for two numbers
+    num1 = float(input("\nEnter the first number: "))
+    num2 = float(input("Enter the second number: "))
 
-# Ask the user for their age
-age = int(input("Please enter your age: "))
+    # Ask the user for the type of operation
+    operator = input("\nEnter the operator (+, -, *, /): ")
 
-# Check if the user is eligible for a driver's license
-if age >= 18:
-    print("Congratulations! You are eligible for a driver's license.")
-elif age >= 16:
-    print("You are eligible for a learner's permit.")
-else:
-    print("Sorry, you are not eligible for a driver's license yet.")
+    # Perform operation using the function
+    result = perform_operation(num1, num2, operator)
+    if result is not None:
+        print(f"Result: {num1} {operator} {num2} = {result}\n")
+
+    # Ask the user if they want to perform another calculation
+    continue_choice = input(
+        "\nDo you want to perform another calculation? (yes/no): ").strip().lower()
+    if continue_choice != 'yes':
+        print("\nExiting the calculator. Goodbye!\n")
+        break

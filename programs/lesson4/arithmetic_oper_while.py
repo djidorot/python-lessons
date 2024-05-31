@@ -33,15 +33,15 @@ def perform_arithmetic_operations(num1, num2):
     division_result = num1 / num2
 
     # Display the results
-    print(f"Sum: {num1} + {num2} = {sum_result}")
+    print(f"\nSum: {num1} + {num2} = {sum_result}")
     print(f"Difference: {num1} - {num2} = {difference_result}")
     print(f"Product: {num1} * {num2} = {product_result}")
-    print(f"Division: {num1} / {num2} = {division_result}")
+    print(f"Division: {num1} / {num2} = {division_result}\n")
 
 
 while True:
     # Get user input for two numbers
-    num1 = float(input("Enter the first number: "))
+    num1 = float(input("\nEnter the first number: "))
     num2 = float(input("Enter the second number: "))
 
     # Call the function with user input as arguments
@@ -49,7 +49,7 @@ while True:
 
     # Ask user if they want to continue
     continue_choice = input(
-        "Do you want to perform another operation? (yes/no): ").strip().lower()
+        "\nDo you want to perform another operation? (yes/no): ").strip().lower()
 
     # Exit the loop if the user chooses 'no'
     if continue_choice != 'yes':
