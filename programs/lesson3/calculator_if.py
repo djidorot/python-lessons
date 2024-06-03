@@ -10,6 +10,7 @@ Your program should follow the structure outlined in the provided code snippet. 
 
 """
 
+
 # Get user input for two numbers
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))

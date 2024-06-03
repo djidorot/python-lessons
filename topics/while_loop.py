@@ -33,6 +33,3 @@ while i <= 5:
 """
 
 # In this example, the loop starts with i equal to 1. The loop will continue to execute as long as i is less than or equal to 5. Inside the loop, the current value of i is printed, and then i is incremented by 1 using the += operator. This continues until i becomes 6, at which point the condition becomes false and the loop exits.
-
-
-

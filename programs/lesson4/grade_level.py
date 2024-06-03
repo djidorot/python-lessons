@@ -17,7 +17,6 @@ Ensure that your program handles invalid input gracefully, such as non-integer v
 """
 
 
-
 def determine_grade(age):
     if age < 0:
         print("Invalid age")
