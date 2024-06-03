@@ -1,32 +1,74 @@
 """
 Problem Statement:
+You are tasked with writing a simple calculator program in Python that can perform basic arithmetic operations: addition, subtraction, multiplication, and division. The program should allow the user to perform multiple calculations in a single session until they choose to exit. The calculator should handle potential errors, such as division by zero, and invalid operator inputs.
 
-Write a Python program that determines a student's eligibility for a driver's license or learner's permit based on their age. Your program should prompt the user to enter their age. If the age provided is 18 or above, the program should display a message congratulating the student on being eligible for a driver's license. If the age provided is 16 or above but less than 18, the program should inform the student that they are eligible for a learner's permit. If the age provided is below 16, the program should notify the student that they are not yet eligible for a driver's license.
+Requirements:
 
-Your program should continuously prompt the user for their age until a valid age (a positive integer) is entered. Ensure that your program handles invalid inputs gracefully, providing clear instructions to the user on how to enter a valid age.
+Function Definition:
+ - Define a function named perform_operation that takes three parameters: num1 (a float), num2 (a float), and operator (a string).
+ - The function should perform the arithmetic operation specified by operator on num1 and num2.
+ - Supported operators are +, -, *, and /.
+ - If the operator is / and num2 is 0, the function should print an error message and return None.
+ - If the operator is not one of the supported operators, the function should print an invalid operator message and return None.
+ - The function should return the result of the operation for valid inputs.
 
+User Interaction:
+ - Continuously prompt the user to input two numbers and an operator.
+ - Use the perform_operation function to calculate the result.
+ - Print the result of each calculation.
+ - After each calculation, ask the user if they want to perform another calculation. If the user inputs anything other than "yes", exit the program.
+
+Error Handling:
+ - Handle division by zero by printing an appropriate error message.
+ - Handle invalid operator inputs by printing an appropriate error message.
 """
 
 
-def check_license_eligibility(age):
-    if age >= 18:
-        print("\nCongratulations! You are eligible for a driver's license.\n")
-    elif age >= 16:
-        print("\nYou are eligible for a learner's permit.\n")
-    else:
-        print("\nSorry, you are not eligible for a driver's license yet.\n")
+def perform_operation(num1, num2, operator):
+    """
+    Perform arithmetic operations based on the operator.
 
+    Args:
+    num1 (float): The first number.
+    num2 (float): The second number.
+    operator (str): The operator (+, -, *, /).
 
-# Ask the user for their age
-while True:
-    age_input = input("\nPlease enter your age: ")
-    if age_input.isdigit():
-        age = int(age_input)
-        if age > 0:
-            break
+    Returns:
+    float: The result of the operation.
+    """
+    if operator == '+':
+        return num1 + num2
+    elif operator == '-':
+        return num1 - num2
+    elif operator == '*':
+        return num1 * num2
+    elif operator == '/':
+        if num2 != 0:
+            return num1 / num2
         else:
-            print("Please enter a positive age.")
+            print("Error: Division by zero is not allowed.")
+            return None
     else:
-        print("Please enter a valid age as a number.")
+        print("Invalid operator. Please enter +, -, *, or /.")
+        return None
 
-check_license_eligibility(age)
+
+while True:
+    # Get user input for two numbers
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+
+    # Ask the user for the type of operation
+    operator = input("Enter the operator (+, -, *, /): ")
+
+    # Perform operation using the function
+    result = perform_operation(num1, num2, operator)
+    if result is not None:
+        print(f"Result: {num1} {operator} {num2} = {result}")
+
+    # Ask the user if they want to perform another calculation
+    continue_choice = input(
+        "Do you want to perform another calculation? (yes/no): ").strip().lower()
+    if continue_choice != 'yes':
+        print("Exiting the calculator. Goodbye!")
+        break
