@@ -13,11 +13,10 @@ Your task is to:
 
 """
 
-age = int(input("Enter your age: "))
-print(type(age))
+age = int(input("\nEnter your age: "))
+# print(type(age))
 
 if age < 18:
-    print("You are not old enough to vote.")
+    print("You are not old enough to vote.\n")
 else:
-    print("You are old enough to vote.")
-
+    print("You are old enough to vote.\n")
