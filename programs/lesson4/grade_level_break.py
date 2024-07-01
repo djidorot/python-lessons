@@ -1,39 +1,26 @@
-"""
-
-"""
-
-
 def determine_grade(age):
     if age < 0:
-        print("Invalid age")
+        print("\nInvalid age\n")
     elif age < 6:
-        print("You are too young for school")
+        print("\nYou are too young for school\n")
     elif age < 12:
-        print("You are in primary school")
+        print("\nYou are in primary school\n")
     elif age < 15:
-        print("You are in middle school")
+        print("\nYou are in middle school\n")
     elif age < 18:
-        print("You are in high school")
+        print("\nYou are in high school\n")
     else:
-        print("You are in college or beyond")
+        print("\nYou are in college or beyond\n")
 
 
 while True:
     try:
-        # Get the age from the user
-        age = int(input("Enter your age: "))
-
-        # If the age is invalid, print a message and continue to the next iteration
-        if age < 0:
-            print("Invalid age, please enter a positive number.")
-            continue
-
-        # Determine the grade based on age
+        age = int(input("\nEnter your age: "))
         determine_grade(age)
-
-        # Break the loop if a valid age is entered
-        break
     except ValueError:
-        # Handle non-integer input
-        print("Invalid input, please enter a valid number.")
-        continue
+        print("\nPlease enter a valid number.")
+
+    continue_prompt = input(
+        "\nDo you want to enter another age? (yes/no): ").strip().lower()
+    if continue_prompt != 'yes':
+        break
