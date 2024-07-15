@@ -1,33 +1,28 @@
 """
-
 """
 
 
-def celsius_to_fahrenheit(celsius):
-    """Converts temperature from Celsius to Fahrenheit"""
-    fahrenheit = (celsius * 9/5) + 32
-    return fahrenheit
+def fahrenheit_to_celsius(fahrenheit):
+    """Converts temperature from Fahrenheit to Celsius"""
+    celsius = (fahrenheit - 32) * 5/9
+    return celsius
 
 
 while True:
-    try:
-        # Input temperature in Celsius
-        celsius = float(
-            input("\nEnter temperature in Celsius (or type 'q' to quit): "))
+    # Input temperature in Fahrenheit
+    fahrenheit = float(input("\nEnter temperature in Fahrenheit: "))
 
-        # Convert Celsius to Fahrenheit
-        fahrenheit = celsius_to_fahrenheit(celsius)
+    # Convert Fahrenheit to Celsius
+    celsius = fahrenheit_to_celsius(fahrenheit)
 
-        # Display the result
-        print(
-            f"\n{celsius} degrees Celsius is equal to {fahrenheit:.2f} degrees Fahrenheit.\n")
-    except ValueError:
-        # Check if user wants to quit
-        user_input = input("\nType 'q' to quit or 'c' to continue: ").lower()
-        if user_input == 'q':
-            print("Goodbye!")
-            break
-        elif user_input == 'c':
-            continue
-        else:
-            print("Invalid input. Please try again.")
+    # Display the result
+    print(
+        f"\n{fahrenheit} degrees Fahrenheit is equal to {celsius:.2f} degrees Celsius.\n")
+
+    # Check if the user wants to continue
+    continue_choice = input(
+        "Do you want to convert another temperature? (yes/no): ").strip().lower()
+    if continue_choice != 'yes':
+        break
+
+print("Goodbye!")

@@ -8,6 +8,7 @@ Your program should continuously prompt the user for their age until a valid age
 """
 
 
+
 def check_license_eligibility(age):
     if age >= 18:
         print("\nCongratulations! You are eligible for a driver's license.\n")

@@ -18,6 +18,8 @@ Requirements:
 5. Handle division by zero (if applicable).
 
 """
+
+
 print()
 print("Select operation:")
 print("1. Add")

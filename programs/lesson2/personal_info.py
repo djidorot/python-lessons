@@ -42,3 +42,5 @@ print("Hobbies:", hobbies)
 print("Favorite Place:", favorite_place)
 print("Favorite Books:", books)
 print()
+
+

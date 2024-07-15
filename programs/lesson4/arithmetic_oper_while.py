@@ -48,8 +48,7 @@ while True:
     perform_arithmetic_operations(num1, num2)
 
     # Ask user if they want to continue
-    continue_choice = input(
-        "\nDo you want to perform another operation? (yes/no): ").strip().lower()
+    continue_choice = input("\nDo you want to perform another operation? (yes/no): ").strip().lower()
 
     # Exit the loop if the user chooses 'no'
     if continue_choice != 'yes':
