@@ -8,6 +8,19 @@ Write a Python script that implements the above requirements. Ensure that your c
 
 """
 
+"""
+Requirements
+Write a function check_license_eligibility(age) that takes an integer age as its argument and prints one of the following messages:
+
+If the user is 18 years old or older, print: "Congratulations! You are eligible for a driver's license."
+If the user is 16 or 17 years old, print: "You are eligible for a learner's permit."
+If the user is under 16 years old, print: "Sorry, you are not eligible for a driver's license yet."
+Prompt the user to enter their age using the input function. Ensure that the input is converted to an integer.
+
+Call the check_license_eligibility function with the user's age as its argument to display the appropriate message.
+
+"""
+
 
 def check_license_eligibility(age):
     if age >= 18:

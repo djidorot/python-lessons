@@ -12,7 +12,8 @@ def main():
             break
         names.append(name)
 
-    print("\nThe names you entered are:")
+    print(f"\nYou entered {len(names)} names.")
+    print("The names you entered are:")
     for name in names:
         print(name)
 
