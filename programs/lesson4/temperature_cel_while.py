@@ -31,5 +31,3 @@ while True:
             continue
         else:
             print("Invalid input. Please try again.")
-
-
