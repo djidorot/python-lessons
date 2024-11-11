@@ -15,16 +15,16 @@ def get_names():
         # If 'exit' was not entered, add the name to the list
         names.append(name)
 
-    # Reverse the list of names
+    # Sort the names alphabetically by first letter
+    names.sort()
+
+    # Reverse the sorted list
     names.reverse()
 
-    # Print the names in reverse order
-    print("\nNames entered in reverse order:")
+    # Print the names in reverse alphabetical order
+    print("\nNames entered in reverse alphabetical order:")
     for name in names:
         print(name)
-
-    # Print a final line break for clean output formatting
-    print()
 
 
 # Call the function to execute the code
