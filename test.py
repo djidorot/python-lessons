@@ -1,10 +1,6 @@
-# Define a function to get names from user input
 def get_names():
     # Initialize an empty list to store names
     names = []
-
-    # Print an empty line for spacing
-    print()
 
     # Start an infinite loop to keep asking for names
     while True:
@@ -19,18 +15,13 @@ def get_names():
         # If 'exit' was not entered, add the name to the list
         names.append(name)
 
-    # Sort the names alphabetically
-    names.sort()
+    # Reverse the list as-is (no sorting)
+    names.reverse()
 
-    # Print a line break for spacing
-    print("\nNames entered (sorted alphabetically):")
-
-    # Loop through the sorted list of names and print each one
+    # Print the names in their reversed order of entry
+    print("\nNames entered in reverse order of entry:")
     for name in names:
         print(name)
-
-    # Print a final line break for clean output formatting
-    print()
 
 
 # Call the function to execute the code
