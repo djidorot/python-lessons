@@ -7,7 +7,7 @@ If the second number is greater than the first number, print: "The second number
 If both numbers are equal, print: "Both numbers are equal."
 
 Your program should utilize input statements to receive user input, if statements to perform the comparison, and print statements to display the result.
-
+sample
 """
 
 # Taking input from the user
