@@ -1,4 +1,5 @@
 # Define the main function
+
 def main():
     # Initialize an empty list to store names
     names = []
