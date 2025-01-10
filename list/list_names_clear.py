@@ -10,7 +10,7 @@ def collect_names():
     while True:
         # Prompt the user to enter a name, 'clear' to reset the list, or 'exit' to finish
         name = input(
-            "Enter a name (or type 'clear' to reset, 'exit' to finish): ")
+            "\nEnter a name (or type 'clear' to reset, 'exit' to finish): ")
 
         # Check if the entered name is 'exit' (case-insensitive)
         if name.lower() == 'exit':
