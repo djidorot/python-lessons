@@ -3,7 +3,8 @@ names = []
 
 # Use a while loop to add names to the list
 while True:
-    name = input("Enter a name (or type 'done' to finish): ")  # Get user input
+    # Get user input
+    name = input("\nEnter a name (or type 'done' to finish): ")
     if name.lower() == 'done':  # Exit condition
         break
     names.append(name)  # Add the name to the list

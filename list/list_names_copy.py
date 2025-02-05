@@ -8,6 +8,9 @@ while True:
         break
     names.append(name)  # Add the name to the list
 
-# Print the updated list of names with their index using index()
-for name in names:
-    print(f"Index {names.index(name)}: {name}")
+# Create a copy of the names list
+names_copy = names.copy()
+
+# Print the updated list of names and its copy
+print("Original list:", names)
+print("Copied list:", names_copy)
