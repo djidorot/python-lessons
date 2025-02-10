@@ -1,34 +1,23 @@
-def clarification(names):
-    """Confirms deletion of the last name from the list."""
-    clarify = input(
-        f"Are you sure you want to delete {names[-1]}? (yes or no): ")
-    if clarify.lower() == "yes":
-        removed_name = names.pop()  # Removes the last name from the list
-        print(f"{removed_name} has been deleted.")
+def clarification():
+    clarify = input(f"are you sure you want to delete {names[-1]} (yes or no)")
+    if clarify == "yes":
+        print(f"{names[-1]} has been deleted")
     else:
-        print("Okay, you may continue.")
-
-
+        print("okay, you may continue"
 def get_names2():
-    """Handles name entry, deletion, and displaying the final list of names."""
-    names = []
+    names=[]
     while True:
-        name = input(
+        name=input(
             "Enter a name, type 'done' to finish or 'remove' to delete the last name from the list: ")
         if name.lower() == 'remove':
             if names:
-                # Pass the names list to the clarification function
-                clarification(names)
+                clarification()
             else:
-                print("No names to delete.")
+                print("No names to delete")
         elif name.lower() == "done":
-            print("\nFinal list of names:")
-            for person in names:  # Avoid shadowing the input variable 'name'
-                print(person)
+            for name in names:
+                print(name)
             break
         else:
-            names.append(name)  # Add the entered name to the list
-
-
-# Run the corrected function
+            names.append(name)
 get_names2()
