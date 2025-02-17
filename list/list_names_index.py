@@ -19,3 +19,5 @@ def collect_and_display_names():
 
 # Call the function
 collect_and_display_names()
+
+
