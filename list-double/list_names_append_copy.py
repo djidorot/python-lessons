@@ -1,9 +1,10 @@
 # Create an empty list
 names = []
-
+print()
 # Use a while loop to add names to the list
 while True:
-    name = input("Enter a name (or type 'done' to finish): ")  # Get user input
+    # Get user input
+    name = input("Enter a name (or type 'done' to finish): ")
     if name.lower() == 'done':  # Exit condition
         break
     names.append(name)  # Add the name to the list
@@ -11,5 +12,7 @@ while True:
 # Create a copy of the list
 names_copy = names.copy()
 
-# Print the updated list of names (copied version)
-print(names_copy)
+# Print the original and copied lists
+print("\nOriginal list:", names)
+print("Copied list:", names_copy)
+print()

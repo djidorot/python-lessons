@@ -1,23 +1,18 @@
 # Create an empty list
 names = []
-
+print()
 # Use a while loop to add names to the list
 while True:
-    name = input("Enter a name (or type 'done' to finish): ")  # Get user input
+    # Get user input
+    name = input("Enter a name (or type 'done' to finish): ")
     if name.lower() == 'done':  # Exit condition
         break
+    names.append(name)  # Add the name to the list
 
-    position = input(
-        "Enter position to insert the name or press Enter to add at the end: ")
-    if position.isdigit():
-        position = int(position)
-        if 0 <= position <= len(names):
-            names.insert(position, name)  # Insert at the specified position
-        else:
-            print(f"Invalid position. Adding '{name}' to the end.")
-            names.append(name)
-    else:
-        names.append(name)  # Add to the end if no position is given
+# Create a copy of the list
+names_copy = names.copy()
 
-# Print the updated list of names
-print(names)
+# Print the original and copied lists
+print("\nOriginal list:", names)
+print("Copied list:", names_copy)
+print()
