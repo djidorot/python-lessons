@@ -1,18 +1,17 @@
 # Create an empty list
 names = []
-print()
+
 # Use a while loop to add names to the list
 while True:
     # Get user input
-    name = input("Enter a name (or type 'done' to finish): ")
+    name = input("\nEnter a name (or type 'done' to finish): ")
     if name.lower() == 'done':  # Exit condition
         break
     names.append(name)  # Add the name to the list
 
-# Create a copy of the list
-names_copy = names.copy()
+    # Display how many times the current name appears in the list
+    print(f"The name '{name}' has been entered {names.count(name)} times.")
 
-# Print the original and copied lists
-print("\nOriginal list:", names)
-print("Copied list:", names_copy)
+# Print the updated list of names
+print("Final list of names:", names)
 print()
