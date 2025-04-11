@@ -8,8 +8,14 @@ while True:
         break
     names.append(name)  # Add the name to the list
 
-# Sort the list alphabetically
-names.sort()
+# Make a copy of the list before clearing
+names_copy = names.copy()
 
-# Print the sorted list of names
-print(names)
+# Clear the original list
+names.clear()
+
+# Print the copied list (before clearing)
+print("Copied list of names:", names_copy)
+
+# Print the original list (after clearing)
+print("Original list after clearing:", names)
